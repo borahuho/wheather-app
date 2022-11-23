@@ -13,6 +13,6 @@ def get_weather(api_key, lat, long):
 
     temp = r['main']['temp']
     temp = math.floor((temp - 273)) #convert Kelvin -> Celcius
-    print(temp, "Graden")
+    print("Het is in Winschoten: ", temp, " Graden")
 
 get_weather(api_key, lat, long)
